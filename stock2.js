@@ -26,7 +26,7 @@ const server = http.createServer(async (req, res) => {
 const parsedUrl = url.parse(req.url, true);
 const pathname = parsedUrl.pathname;
 
-if (pathname == '/' && req.method == 'GET') {
+if (pathname == "/" && req.method == "GET") {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(`
     <html>
@@ -66,8 +66,8 @@ else if (pathname == "/process" && req.method == "GET") {
         console.log(`${company.companyName}, ${company.ticker}, $${company.price}`);
     });
 
-    res.writeHead(302, { 'Location': '/' });
-    res.end();
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('<html><body>Search complete.<a href="/">Back</a></body></html>');
 }
 });
 server.listen(port);
