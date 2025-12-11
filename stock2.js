@@ -26,7 +26,7 @@ const server = http.createServer(async (req, res) => {
 const parsedUrl = url.parse(req.url, true);
 const pathname = parsedUrl.pathname;
 
-if (pathname === '/' && req.method === 'GET') {
+if (pathname == '/' && req.method == 'GET') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(`
     <html>
