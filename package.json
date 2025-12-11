@@ -1,0 +1,22 @@
+{
+  "name": "stock2",
+  "version": "1.0.0",
+  "description": "node app ",
+  "main": "hello_app.js",
+  "scripts": {
+  "start": "node stock2.js"
+},
+"dependencies": {
+  "mongodb": "^6.0.0"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}
